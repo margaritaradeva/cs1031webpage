@@ -1,16 +1,123 @@
 <!DOCTYPE html>
 <html lang = "en">
+
 	<head>
 		<meta charset="utf-8">
-		<meta name="description" content="Lego WEBSITE">
-        <link rel="stylesheet" href="style.css">
+		<meta name="description" content="Gabrovo Home Page">
+<!--Adding Bootstrap and external css to the page-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.jjs/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="style.css">
+
 		<title>Home Page</title>
 	</head>
+
+
+
+
+
+
+<!--Navigation menu using the Bootstrap example from lectures-->        
+		<header>
+			<ul class ="nav nav-tabs flex-sm-row">
+				<li class="nav-item">
+					<a id="act" class="nav-item nav-link active" href="index.html">Home</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-item nav-link" href="history.html">History</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-item nav-link" href="essentials.html">Visit</a>
+				</li>
+			</ul>
+		</header>
+		
+		
+		
+		
+		
+		
+		
+<!--Code for banner of the page using Jumbotron from Bootstrap-->
 	<body>
-        <div class="topnav">
-            <a class="active" href="index.html">Home</a>
-            <a href="history.html">News</a>
-            <a href="essentials.html">Visit</a>
-        </div>
+		<article class="banner">
+			<div class="container">
+				<div class="jumbotron jumbotron-fluid">
+					<div class="row">
+						<div id="banner-text" class="col-lg-3">
+							<h1>Gabrovo</h1>
+							<p>Dating back to the XII century<br>
+								“lets get crazy with laughter”</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		
+		<div class="container-fluid">
+			<div id="main-content" class="row">
+				<div class="col-lg-6 border">
+					<h4>Have you heard about Gabrovo?</h4>
+					<p>
+						Gabrovo is a lovely town in central northern Bulgaria known for its unique nature, traditions and culture. Home of the biggest
+						carnival in Bulgaria, Gabrovo is also known as an international capital of humour and satire attracting many tourists each year.
+						Stretching over 25 km along the Yantra River makes Gabrovo the longest town in the country. The geographic center of Bulgaria - Uzana
+						is located near the town. Great weather and great people make the perfect combination for a holiday for those who love the mountains 
+						with an opportunity to try the famous ski slopes in the winter and climb some of the highest peaks in Bulgaria.
+					</p>
+				</div>
+
+				<div id="right-cont" class="col-lg-3 border offset-lg-2">
+					<h4>Name</h4>
+					<p> 
+						According to the most widespread legend, Gabrovo was founded by a blacksmith called Racho, close to whose fireplace a hornbeam rose, so
+						the settlement acquired its name, from the Bulgarian word gabar ("hornbeam") + the Bulgarian suffix -ovo.
+					</p>
+				</div>
+			</div>
+			
+		<!--Bootstrap jumbotron to separate the content that is going to follow-->
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<h1 class="display-4">What about location?</h1>
+				<p class="lead">Do you want to know more about Gabrovo's location? Scroll down then</p>
+			</div>
+		</div>
+		</div>
+		
+			
+		<div class="container-fluid">
+			<div id="geo" class="row">
+				<div class="col-lg-4 p-3 my-3 border">
+					<h4>Geography</h4>
+					<p>
+						The town of Gabrovo is situated in the northern branches of the Central Balkan Mountains with altitude of 392 m. The average annual
+						temperature is 10° C. Cold winter(the snow cover lasts about 110 days), summer-relatively warm reaching temperatures up to 40 ° C. 
+					</p>
+					
+					<div id="map" class="col-el-6 img-fluid">
+						<iframe src="https://www.openstreetmap.org/export/embed.html?bbox=25.209503173828125%2C42.831037756426596%2C25.401077270507812%2C42.902753329654495&amp;layer=mapnik"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=13/42.8669/25.3053">See a bigger map</a></small>
+					</div>
+					
+					<p>
+						The proximity of Gabrovo to the Shipka pass is defined as an important transport node. The city is 220 km away. from Sofia(the capital). The townis a 
+						part of one of the most important road links crossing Bulgaria in the North-South direction, which is part of the Trans-European Transport Corridor № 9.
+						The town is also a regional center of Gabrovo region. Gabrovo municipality consists of 10 mayoralties and 18 mayoralties. Situated on an area
+						of ​​1871.7 ha, Gabrovo is also a strategic transport crossroad on the E85 main road.
+					</p>
+				</div>
+					
+				
+				
+			</div>
+		</div>
+		
+
+			</div>			
+		</footer>
 	</body>
 </html>
